@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53C5D9E01594B29400B7AD0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5D9DF1594B29400B7AD0E /* Cocoa.framework */; };
+		53C5D9EA1594B29400B7AD0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C5D9E81594B29400B7AD0E /* InfoPlist.strings */; };
+		53C5D9EC1594B29400B7AD0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D9EB1594B29400B7AD0E /* main.m */; };
+		53C5D9F01594B29600B7AD0E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 53C5D9EE1594B29600B7AD0E /* Credits.rtf */; };
+		53C5D9F31594B29600B7AD0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D9F21594B29600B7AD0E /* AppDelegate.m */; };
+		53C5D9F61594B29700B7AD0E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C5D9F41594B29700B7AD0E /* MainMenu.xib */; };
+		53C5D9FE1594B29700B7AD0E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5D9FD1594B29700B7AD0E /* SenTestingKit.framework */; };
+		53C5D9FF1594B29700B7AD0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5D9DF1594B29400B7AD0E /* Cocoa.framework */; };
+		53C5DA071594B29800B7AD0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C5DA051594B29800B7AD0E /* InfoPlist.strings */; };
+		53C5DA0A1594B29800B7AD0E /* FoddaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5DA091594B29800B7AD0E /* FoddaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53C5DA001594B29700B7AD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53C5D9D21594B29000B7AD0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53C5D9DA1594B29400B7AD0E;
+			remoteInfo = Fodda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53C5D9DB1594B29400B7AD0E /* Fodda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fodda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C5D9DF1594B29400B7AD0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		53C5D9E21594B29400B7AD0E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		53C5D9E31594B29400B7AD0E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		53C5D9E41594B29400B7AD0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53C5D9E71594B29400B7AD0E /* Fodda-Info.plist */ = {isa = PBXFileReference; path = "Fodda-Info.plist"; sourceTree = "<group>"; };
+		53C5D9E91594B29400B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53C5D9EB1594B29400B7AD0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53C5D9ED1594B29500B7AD0E /* Fodda-Prefix.pch */ = {isa = PBXFileReference; path = "Fodda-Prefix.pch"; sourceTree = "<group>"; };
+		53C5D9EF1594B29600B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		53C5D9F11594B29600B7AD0E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		53C5D9F21594B29600B7AD0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53C5D9F51594B29700B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		53C5D9FC1594B29700B7AD0E /* FoddaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoddaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C5D9FD1594B29700B7AD0E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		53C5DA041594B29800B7AD0E /* FoddaTests-Info.plist */ = {isa = PBXFileReference; path = "FoddaTests-Info.plist"; sourceTree = "<group>"; };
+		53C5DA061594B29800B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53C5DA081594B29800B7AD0E /* FoddaTests.h */ = {isa = PBXFileReference; path = FoddaTests.h; sourceTree = "<group>"; };
+		53C5DA091594B29800B7AD0E /* FoddaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoddaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53C5D9D81594B29400B7AD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5D9E01594B29400B7AD0E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C5D9F81594B29700B7AD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5D9FE1594B29700B7AD0E /* SenTestingKit.framework in Frameworks */,
+				53C5D9FF1594B29700B7AD0E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53C5D9D01594B29000B7AD0E = {
+			isa = PBXGroup;
+			children = (
+				53C5D9E51594B29400B7AD0E /* Fodda */,
+				53C5DA021594B29700B7AD0E /* FoddaTests */,
+				53C5D9DE1594B29400B7AD0E /* Frameworks */,
+				53C5D9DC1594B29400B7AD0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53C5D9DC1594B29400B7AD0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53C5D9DB1594B29400B7AD0E /* Fodda.app */,
+				53C5D9FC1594B29700B7AD0E /* FoddaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53C5D9DE1594B29400B7AD0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C5D9DF1594B29400B7AD0E /* Cocoa.framework */,
+				53C5D9FD1594B29700B7AD0E /* SenTestingKit.framework */,
+				53C5D9E11594B29400B7AD0E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53C5D9E11594B29400B7AD0E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C5D9E21594B29400B7AD0E /* AppKit.framework */,
+				53C5D9E31594B29400B7AD0E /* CoreData.framework */,
+				53C5D9E41594B29400B7AD0E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		53C5D9E51594B29400B7AD0E /* Fodda */ = {
+			isa = PBXGroup;
+			children = (
+				53C5D9F11594B29600B7AD0E /* AppDelegate.h */,
+				53C5D9F21594B29600B7AD0E /* AppDelegate.m */,
+				53C5D9F41594B29700B7AD0E /* MainMenu.xib */,
+				53C5D9E61594B29400B7AD0E /* Supporting Files */,
+			);
+			path = Fodda;
+			sourceTree = "<group>";
+		};
+		53C5D9E61594B29400B7AD0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53C5D9E71594B29400B7AD0E /* Fodda-Info.plist */,
+				53C5D9E81594B29400B7AD0E /* InfoPlist.strings */,
+				53C5D9EB1594B29400B7AD0E /* main.m */,
+				53C5D9ED1594B29500B7AD0E /* Fodda-Prefix.pch */,
+				53C5D9EE1594B29600B7AD0E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53C5DA021594B29700B7AD0E /* FoddaTests */ = {
+			isa = PBXGroup;
+			children = (
+				53C5DA081594B29800B7AD0E /* FoddaTests.h */,
+				53C5DA091594B29800B7AD0E /* FoddaTests.m */,
+				53C5DA031594B29800B7AD0E /* Supporting Files */,
+			);
+			path = FoddaTests;
+			sourceTree = "<group>";
+		};
+		53C5DA031594B29800B7AD0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53C5DA041594B29800B7AD0E /* FoddaTests-Info.plist */,
+				53C5DA051594B29800B7AD0E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53C5D9DA1594B29400B7AD0E /* Fodda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C5DA0D1594B29800B7AD0E /* Build configuration list for PBXNativeTarget "Fodda" */;
+			buildPhases = (
+				53C5D9D71594B29400B7AD0E /* Sources */,
+				53C5D9D81594B29400B7AD0E /* Frameworks */,
+				53C5D9D91594B29400B7AD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fodda;
+			productName = Fodda;
+			productReference = 53C5D9DB1594B29400B7AD0E /* Fodda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53C5D9FB1594B29700B7AD0E /* FoddaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C5DA101594B29800B7AD0E /* Build configuration list for PBXNativeTarget "FoddaTests" */;
+			buildPhases = (
+				53C5D9F71594B29700B7AD0E /* Sources */,
+				53C5D9F81594B29700B7AD0E /* Frameworks */,
+				53C5D9F91594B29700B7AD0E /* Resources */,
+				53C5D9FA1594B29700B7AD0E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53C5DA011594B29700B7AD0E /* PBXTargetDependency */,
+			);
+			name = FoddaTests;
+			productName = FoddaTests;
+			productReference = 53C5D9FC1594B29700B7AD0E /* FoddaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53C5D9D21594B29000B7AD0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Yoav.Frandzel@gmail.com";
+			};
+			buildConfigurationList = 53C5D9D51594B29000B7AD0E /* Build configuration list for PBXProject "Fodda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53C5D9D01594B29000B7AD0E;
+			productRefGroup = 53C5D9DC1594B29400B7AD0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53C5D9DA1594B29400B7AD0E /* Fodda */,
+				53C5D9FB1594B29700B7AD0E /* FoddaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53C5D9D91594B29400B7AD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5D9EA1594B29400B7AD0E /* InfoPlist.strings in Resources */,
+				53C5D9F01594B29600B7AD0E /* Credits.rtf in Resources */,
+				53C5D9F61594B29700B7AD0E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C5D9F91594B29700B7AD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5DA071594B29800B7AD0E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53C5D9FA1594B29700B7AD0E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53C5D9D71594B29400B7AD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5D9EC1594B29400B7AD0E /* main.m in Sources */,
+				53C5D9F31594B29600B7AD0E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C5D9F71594B29700B7AD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5DA0A1594B29800B7AD0E /* FoddaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53C5DA011594B29700B7AD0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53C5D9DA1594B29400B7AD0E /* Fodda */;
+			targetProxy = 53C5DA001594B29700B7AD0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53C5D9E81594B29400B7AD0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C5D9E91594B29400B7AD0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53C5D9EE1594B29600B7AD0E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C5D9EF1594B29600B7AD0E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		53C5D9F41594B29700B7AD0E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C5D9F51594B29700B7AD0E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		53C5DA051594B29800B7AD0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C5DA061594B29800B7AD0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53C5DA0B1594B29800B7AD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		53C5DA0C1594B29800B7AD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		53C5DA0E1594B29800B7AD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fodda/Fodda-Prefix.pch";
+				INFOPLIST_FILE = "Fodda/Fodda-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53C5DA0F1594B29800B7AD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fodda/Fodda-Prefix.pch";
+				INFOPLIST_FILE = "Fodda/Fodda-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		53C5DA111594B29800B7AD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fodda.app/Contents/MacOS/Fodda";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fodda/Fodda-Prefix.pch";
+				INFOPLIST_FILE = "FoddaTests/FoddaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		53C5DA121594B29800B7AD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fodda.app/Contents/MacOS/Fodda";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fodda/Fodda-Prefix.pch";
+				INFOPLIST_FILE = "FoddaTests/FoddaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53C5D9D51594B29000B7AD0E /* Build configuration list for PBXProject "Fodda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C5DA0B1594B29800B7AD0E /* Debug */,
+				53C5DA0C1594B29800B7AD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C5DA0D1594B29800B7AD0E /* Build configuration list for PBXNativeTarget "Fodda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C5DA0E1594B29800B7AD0E /* Debug */,
+				53C5DA0F1594B29800B7AD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53C5DA101594B29800B7AD0E /* Build configuration list for PBXNativeTarget "FoddaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C5DA111594B29800B7AD0E /* Debug */,
+				53C5DA121594B29800B7AD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53C5D9D21594B29000B7AD0E /* Project object */;
+}
