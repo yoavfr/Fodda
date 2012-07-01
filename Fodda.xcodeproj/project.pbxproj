@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53295E14159F650700A5D1A3 /* FileCopyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53295E13159F650700A5D1A3 /* FileCopyOperation.m */; };
 		53C5D9E01594B29400B7AD0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5D9DF1594B29400B7AD0E /* Cocoa.framework */; };
 		53C5D9EA1594B29400B7AD0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C5D9E81594B29400B7AD0E /* InfoPlist.strings */; };
 		53C5D9EC1594B29400B7AD0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D9EB1594B29400B7AD0E /* main.m */; };
@@ -17,6 +18,9 @@
 		53C5D9FF1594B29700B7AD0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5D9DF1594B29400B7AD0E /* Cocoa.framework */; };
 		53C5DA071594B29800B7AD0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C5DA051594B29800B7AD0E /* InfoPlist.strings */; };
 		53C5DA0A1594B29800B7AD0E /* FoddaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5DA091594B29800B7AD0E /* FoddaTests.m */; };
+		53C5DA181594B44100B7AD0E /* HelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5DA171594B44100B7AD0E /* HelloView.m */; };
+		53C5DA761598C05500B7AD0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5DA751598C05500B7AD0E /* AVFoundation.framework */; };
+		53C5DA781598C0B800B7AD0E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5DA771598C0B800B7AD0E /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,25 +34,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53295E12159F650700A5D1A3 /* FileCopyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCopyOperation.h; sourceTree = "<group>"; };
+		53295E13159F650700A5D1A3 /* FileCopyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCopyOperation.m; sourceTree = "<group>"; };
+		53295E15159F8FFA00A5D1A3 /* ImageDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDisplay.h; sourceTree = "<group>"; };
 		53C5D9DB1594B29400B7AD0E /* Fodda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fodda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C5D9DF1594B29400B7AD0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		53C5D9E21594B29400B7AD0E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		53C5D9E31594B29400B7AD0E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		53C5D9E41594B29400B7AD0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		53C5D9E71594B29400B7AD0E /* Fodda-Info.plist */ = {isa = PBXFileReference; path = "Fodda-Info.plist"; sourceTree = "<group>"; };
+		53C5D9E71594B29400B7AD0E /* Fodda-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fodda-Info.plist"; sourceTree = "<group>"; };
 		53C5D9E91594B29400B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53C5D9EB1594B29400B7AD0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		53C5D9ED1594B29500B7AD0E /* Fodda-Prefix.pch */ = {isa = PBXFileReference; path = "Fodda-Prefix.pch"; sourceTree = "<group>"; };
+		53C5D9ED1594B29500B7AD0E /* Fodda-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fodda-Prefix.pch"; sourceTree = "<group>"; };
 		53C5D9EF1594B29600B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		53C5D9F11594B29600B7AD0E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		53C5D9F11594B29600B7AD0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53C5D9F21594B29600B7AD0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53C5D9F51594B29700B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		53C5D9FC1594B29700B7AD0E /* FoddaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoddaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C5D9FD1594B29700B7AD0E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		53C5DA041594B29800B7AD0E /* FoddaTests-Info.plist */ = {isa = PBXFileReference; path = "FoddaTests-Info.plist"; sourceTree = "<group>"; };
+		53C5DA041594B29800B7AD0E /* FoddaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoddaTests-Info.plist"; sourceTree = "<group>"; };
 		53C5DA061594B29800B7AD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		53C5DA081594B29800B7AD0E /* FoddaTests.h */ = {isa = PBXFileReference; path = FoddaTests.h; sourceTree = "<group>"; };
+		53C5DA081594B29800B7AD0E /* FoddaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoddaTests.h; sourceTree = "<group>"; };
 		53C5DA091594B29800B7AD0E /* FoddaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoddaTests.m; sourceTree = "<group>"; };
+		53C5DA161594B44100B7AD0E /* HelloView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloView.h; sourceTree = "<group>"; };
+		53C5DA171594B44100B7AD0E /* HelloView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloView.m; sourceTree = "<group>"; };
+		53C5DA751598C05500B7AD0E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		53C5DA771598C0B800B7AD0E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C5DA781598C0B800B7AD0E /* CoreMedia.framework in Frameworks */,
+				53C5DA761598C05500B7AD0E /* AVFoundation.framework in Frameworks */,
 				53C5D9E01594B29400B7AD0E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +88,8 @@
 		53C5D9D01594B29000B7AD0E = {
 			isa = PBXGroup;
 			children = (
+				53C5DA771598C0B800B7AD0E /* CoreMedia.framework */,
+				53C5DA751598C05500B7AD0E /* AVFoundation.framework */,
 				53C5D9E51594B29400B7AD0E /* Fodda */,
 				53C5DA021594B29700B7AD0E /* FoddaTests */,
 				53C5D9DE1594B29400B7AD0E /* Frameworks */,
@@ -118,6 +133,11 @@
 				53C5D9F21594B29600B7AD0E /* AppDelegate.m */,
 				53C5D9F41594B29700B7AD0E /* MainMenu.xib */,
 				53C5D9E61594B29400B7AD0E /* Supporting Files */,
+				53C5DA161594B44100B7AD0E /* HelloView.h */,
+				53C5DA171594B44100B7AD0E /* HelloView.m */,
+				53295E12159F650700A5D1A3 /* FileCopyOperation.h */,
+				53295E13159F650700A5D1A3 /* FileCopyOperation.m */,
+				53295E15159F8FFA00A5D1A3 /* ImageDisplay.h */,
 			);
 			path = Fodda;
 			sourceTree = "<group>";
@@ -263,6 +283,8 @@
 			files = (
 				53C5D9EC1594B29400B7AD0E /* main.m in Sources */,
 				53C5D9F31594B29600B7AD0E /* AppDelegate.m in Sources */,
+				53C5DA181594B44100B7AD0E /* HelloView.m in Sources */,
+				53295E14159F650700A5D1A3 /* FileCopyOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +456,7 @@
 				53C5DA0F1594B29800B7AD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53C5DA101594B29800B7AD0E /* Build configuration list for PBXNativeTarget "FoddaTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +465,7 @@
 				53C5DA121594B29800B7AD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
