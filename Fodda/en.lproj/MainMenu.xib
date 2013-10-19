@@ -1405,7 +1405,7 @@
 							<string key="NSFrame">{{341, 272}, {67, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="619561230"/>
+							<reference key="NSNextKeyView" ref="557124204"/>
 							<string key="NSReuseIdentifierKey">_NS:687</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="737387971">
@@ -1503,7 +1503,7 @@
 						<object class="NSButton" id="619561230">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{18, 250}, {83, 18}}</string>
+							<string key="NSFrame">{{250, 247}, {83, 18}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="899494115"/>
@@ -1518,11 +1518,11 @@
 								<reference key="NSControlView" ref="619561230"/>
 								<int key="NSButtonFlags">1211912703</int>
 								<int key="NSButtonFlags2">2</int>
-								<object class="NSCustomResource" key="NSNormalImage">
+								<object class="NSCustomResource" key="NSNormalImage" id="690789539">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">NSSwitch</string>
 								</object>
-								<object class="NSButtonImageSource" key="NSAlternateImage">
+								<object class="NSButtonImageSource" key="NSAlternateImage" id="222507906">
 									<string key="NSImageName">NSSwitch</string>
 								</object>
 								<string key="NSAlternateContents"/>
@@ -1558,6 +1558,32 @@
 								<bool key="NSAnimates">NO</bool>
 							</object>
 							<bool key="NSEditable">YES</bool>
+						</object>
+						<object class="NSButton" id="557124204">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{97, 247}, {81, 18}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="619561230"/>
+							<string key="NSReuseIdentifierKey">_NS:771</string>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSButtonCell" key="NSCell" id="450775793">
+								<int key="NSCellFlags">-2080244224</int>
+								<int key="NSCellFlags2">0</int>
+								<string key="NSContents">Only new</string>
+								<reference key="NSSupport" ref="393758186"/>
+								<string key="NSCellIdentifier">_NS:771</string>
+								<reference key="NSControlView" ref="557124204"/>
+								<int key="NSButtonFlags">1211912703</int>
+								<int key="NSButtonFlags2">2</int>
+								<reference key="NSNormalImage" ref="690789539"/>
+								<reference key="NSAlternateImage" ref="222507906"/>
+								<string key="NSAlternateContents"/>
+								<string key="NSKeyEquivalent"/>
+								<int key="NSPeriodicDelay">200</int>
+								<int key="NSPeriodicInterval">25</int>
+							</object>
 						</object>
 					</array>
 					<string key="NSFrameSize">{480, 352}</string>
@@ -2370,6 +2396,22 @@
 					<int key="connectionID">632</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">onlyNewCheckBox</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="557124204"/>
+					</object>
+					<int key="connectionID">635</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">onlyNew:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="557124204"/>
+					</object>
+					<int key="connectionID">636</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: values.sourceFolder</string>
 						<reference key="source" ref="469528326"/>
@@ -2416,6 +2458,22 @@
 						</object>
 					</object>
 					<int key="connectionID">626</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.onlyNew</string>
+						<reference key="source" ref="557124204"/>
+						<reference key="destination" ref="969194751"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="557124204"/>
+							<reference key="NSDestination" ref="969194751"/>
+							<string key="NSLabel">value: values.onlyNew</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.onlyNew</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">638</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2949,8 +3007,9 @@
 							<reference ref="750302353"/>
 							<reference ref="50762602"/>
 							<reference ref="340957396"/>
-							<reference ref="619561230"/>
 							<reference ref="899494115"/>
+							<reference ref="619561230"/>
+							<reference ref="557124204"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3554,6 +3613,19 @@
 						<reference key="object" ref="969194751"/>
 						<reference key="parent" ref="0"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">633</int>
+						<reference key="object" ref="557124204"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="450775793"/>
+						</array>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">634</int>
+						<reference key="object" ref="450775793"/>
+						<reference key="parent" ref="557124204"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -3720,6 +3792,8 @@
 				<string key="596.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="612.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="618.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="633.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="634.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="74.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3736,7 +3810,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">632</int>
+			<int key="maxID">638</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3746,6 +3820,7 @@
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="findDestination:">id</string>
 						<string key="findSource:">id</string>
+						<string key="onlyNew:">id</string>
 						<string key="overwrite:">id</string>
 						<string key="startStop:">id</string>
 					</dictionary>
@@ -3756,6 +3831,10 @@
 						</object>
 						<object class="IBActionInfo" key="findSource:">
 							<string key="name">findSource:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="onlyNew:">
+							<string key="name">onlyNew:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="overwrite:">
@@ -3772,6 +3851,7 @@
 						<string key="destinationBox">NSTextField</string>
 						<string key="findDestinationButton">NSButton</string>
 						<string key="findSourceButton">NSButton</string>
+						<string key="onlyNewCheckBox">NSButton</string>
 						<string key="overwriteCheckBox">NSButton</string>
 						<string key="previewImage">NSImageView</string>
 						<string key="sourceBox">NSTextField</string>
@@ -3793,6 +3873,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="findSourceButton">
 							<string key="name">findSourceButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="onlyNewCheckBox">
+							<string key="name">onlyNewCheckBox</string>
 							<string key="candidateClassName">NSButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="overwriteCheckBox">

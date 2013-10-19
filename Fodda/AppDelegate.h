@@ -10,13 +10,17 @@
 
 #import "FileCopyOperation.h"
 #import "ImageDisplay.h"
+#import "TransferredItemsStore.h"
 
 @interface AppDelegate: NSObject <NSApplicationDelegate, ImageDisplay>
 {
     @private
     BOOL _overwrite;
+    BOOL _newOnly;
     FileCopyOperation *_fileCopyOperation;
     NSOperationQueue* _operationQueue;
+    TransferredItemsStore* _itemStore;
+    
 }
 @property (assign) IBOutlet NSWindow *window;
 - (IBAction)findSource:(id)sender;
@@ -31,6 +35,8 @@
 @property (assign) IBOutlet NSButton *findDestinationButton;
 @property (assign) IBOutlet NSButton *findSourceButton;
 @property (assign) IBOutlet NSButton *startButton;
+@property (assign) IBOutlet NSButton *onlyNewCheckBox;
+- (IBAction)onlyNew:(id)sender;
 
 - (BOOL) copy:(NSString*) source toDestination: (NSString*) destination;
 

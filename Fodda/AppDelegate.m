@@ -15,6 +15,7 @@
 @synthesize findDestinationButton = _findDestinationButton;
 @synthesize findSourceButton = _findSourceButton;
 @synthesize startButton = _startButton;
+@synthesize onlyNewCheckBox = _onlyNewCheckBox;
 @synthesize sourceBox = _sourceBox;
 @synthesize destinationBox = _destinationBox;
 
@@ -30,8 +31,11 @@
 {
     // Insert code here to initialize your application
     _overwrite = [_overwriteCheckBox state];
+    _newOnly = [_onlyNewCheckBox state];
     _operationQueue = [[NSOperationQueue alloc] init];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveDefaults:) name:NSWindowWillCloseNotification object:_window];
+    _itemStore = [[TransferredItemsStore alloc] init];
+    [_itemStore load];
 }
 
 - (BOOL) saveDefaults:(id)sender
@@ -40,7 +44,10 @@
     [[NSUserDefaults standardUserDefaults] setValue:[_sourceBox stringValue] forKey:@"sourceFolder"];
     [[NSUserDefaults standardUserDefaults] setValue:[_destinationBox stringValue] forKey:@"destinationFolder"];
     [[NSUserDefaults standardUserDefaults] setInteger:[_overwriteCheckBox state] forKey:@"overwrite"];
+    [[NSUserDefaults standardUserDefaults] setInteger:[_onlyNewCheckBox state] forKey:@"onlyNew"];
+    [_itemStore store];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    [[NSUserDefaults standardUserDefaults] autorelease];
     return YES;
 }
 
@@ -98,6 +105,7 @@
     [_sourceBox setEnabled:NO];
     [_destinationBox setEnabled:NO];
     [_overwriteCheckBox setEnabled:NO];
+    [_onlyNewCheckBox setEnabled:NO];
     [_findSourceButton setEnabled:NO];
     [_findDestinationButton setEnabled:NO];
     [_startButton setTitle:@"Stop"];
@@ -119,10 +127,17 @@
     NSLog(@"%d",_overwrite);
 }
 
+- (IBAction)onlyNew:(id)sender 
+{
+    _newOnly = [_onlyNewCheckBox state];
+    NSLog(@"%d",_newOnly);
+}
+
 - (BOOL) copy:(NSString*) source toDestination:(NSString*) destination
 {
-    _fileCopyOperation = [[FileCopyOperation alloc] initWithSource:source destination:destination overwrite:_overwrite display: self];
-    [_operationQueue addOperation:[ _fileCopyOperation retain]];
+    _fileCopyOperation = [[[FileCopyOperation alloc] initWithSource:source destination:destination overwrite:_overwrite newOnly: _newOnly display: self itemStore: _itemStore] autorelease];
+    [_operationQueue addOperation: _fileCopyOperation];
+    
     return true;
 }
 
@@ -134,11 +149,11 @@
 - (void) operationDone
 {
     NSLog(@"copy done");
-    [_fileCopyOperation release];
     _fileCopyOperation = nil;
     [_sourceBox setEnabled:YES];
     [_destinationBox setEnabled:YES];
     [_overwriteCheckBox setEnabled:YES];
+    [_onlyNewCheckBox setEnabled:YES];
     [_findSourceButton setEnabled:YES];
     [_findDestinationButton setEnabled:YES];
     [_startButton setTitle:@"Start"];
